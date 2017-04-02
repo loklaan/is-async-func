@@ -1,0 +1,805 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async anon function 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+var _regenerator = require(\\"babel-runtime/regenerator\\");
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = _asyncToGenerator(_regenerator2.default.mark(function _callee() {
+  return _regenerator2.default.wrap(function _callee$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+        case \\"end\\":
+          return _context.stop();
+      }
+    }
+  }, _callee, this);
+}));"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async anon function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async anon function 3`] = `"function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async class method 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+var _defineProperty = require(\\"babel-runtime/core-js/object/define-property\\");
+
+var _defineProperty2 = _interopRequireDefault(_defineProperty);
+
+var _regenerator = require(\\"babel-runtime/regenerator\\");
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\\"value\\" in descriptor) descriptor.writable = true; (0, _defineProperty2.default)(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\\"Cannot call a class as a function\\"); } }
+
+module.exports = function () {
+  var Foo = function () {
+    function Foo() {
+      _classCallCheck(this, Foo);
+    }
+
+    _createClass(Foo, [{
+      key: \\"bar\\",
+      value: function () {
+        var _ref = _asyncToGenerator(_regenerator2.default.mark(function _callee() {
+          return _regenerator2.default.wrap(function _callee$(_context) {
+            while (1) {
+              switch (_context.prev = _context.next) {
+                case 0:
+                case \\"end\\":
+                  return _context.stop();
+              }
+            }
+          }, _callee, this);
+        }));
+
+        function bar() {
+          return _ref.apply(this, arguments);
+        }
+
+        return bar;
+      }()
+    }]);
+
+    return Foo;
+  }();
+
+  var foo = new Foo();
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async class method 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async class method 3`] = `
+"function bar() {
+          return _ref.apply(this, arguments);
+        }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async fat arrow 1`] = `"async () => {}"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async fat arrow 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async fat arrow 3`] = `"function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async obj prop anon function 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+var _regenerator = require(\\"babel-runtime/regenerator\\");
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = function () {
+  var foo = {
+    bar: function () {
+      var _ref = _asyncToGenerator(_regenerator2.default.mark(function _callee() {
+        return _regenerator2.default.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+              case \\"end\\":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function bar() {
+        return _ref.apply(this, arguments);
+      }
+
+      return bar;
+    }()
+  };
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async obj prop anon function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async obj prop anon function 3`] = `
+"function bar() {
+        return _ref.apply(this, arguments);
+      }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async obj prop fat arrow function 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+var _regenerator = require(\\"babel-runtime/regenerator\\");
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = function () {
+  var _this = this;
+
+  var foo = {
+    bar: function () {
+      var _ref = _asyncToGenerator(_regenerator2.default.mark(function _callee() {
+        return _regenerator2.default.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+              case \\"end\\":
+                return _context.stop();
+            }
+          }
+        }, _callee, _this);
+      }));
+
+      return function bar() {
+        return _ref.apply(this, arguments);
+      };
+    }()
+  };
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async obj prop fat arrow function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async obj prop fat arrow function 3`] = `
+"function bar() {
+        return _ref.apply(this, arguments);
+      }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async obj prop function 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+var _regenerator = require(\\"babel-runtime/regenerator\\");
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = function () {
+  var foo = {
+    bar: function bar() {
+      var _this = this;
+
+      return _asyncToGenerator(_regenerator2.default.mark(function _callee() {
+        return _regenerator2.default.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+              case \\"end\\":
+                return _context.stop();
+            }
+          }
+        }, _callee, _this);
+      }))();
+    }
+  };
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async obj prop function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should detect async obj prop function 3`] = `
+"function bar() {
+      var _this = this;
+
+      return _asyncToGenerator(_regenerator2.default.mark(function _callee() {
+        return _regenerator2.default.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+              case \\"end\\":
+                return _context.stop();
+            }
+          }
+        }, _callee, _this);
+      }))();
+    }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should not detect generator anon function 1`] = `
+"\\"use strict\\";
+
+var _regenerator = require(\\"babel-runtime/regenerator\\");
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = _regenerator2.default.mark(function _callee() {
+  return _regenerator2.default.wrap(function _callee$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+        case \\"end\\":
+          return _context.stop();
+      }
+    }
+  }, _callee, this);
+});"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should not detect generator anon function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should not detect generator anon function 3`] = `
+"function _callee() {
+  return _regenerator2.default.wrap(function _callee$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+        case \\"end\\":
+          return _context.stop();
+      }
+    }
+  }, _callee, this);
+}"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should not detect generator class method 1`] = `
+"\\"use strict\\";
+
+var _defineProperty = require(\\"babel-runtime/core-js/object/define-property\\");
+
+var _defineProperty2 = _interopRequireDefault(_defineProperty);
+
+var _regenerator = require(\\"babel-runtime/regenerator\\");
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\\"value\\" in descriptor) descriptor.writable = true; (0, _defineProperty2.default)(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\\"Cannot call a class as a function\\"); } }
+
+module.exports = function () {
+  var Foo = function () {
+    function Foo() {
+      _classCallCheck(this, Foo);
+    }
+
+    _createClass(Foo, [{
+      key: \\"bar\\",
+      value: _regenerator2.default.mark(function bar() {
+        return _regenerator2.default.wrap(function bar$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+              case \\"end\\":
+                return _context.stop();
+            }
+          }
+        }, bar, this);
+      })
+    }]);
+
+    return Foo;
+  }();
+
+  var foo = new Foo();
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should not detect generator class method 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should not detect generator class method 3`] = `
+"function bar() {
+        return _regenerator2.default.wrap(function bar$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+              case \\"end\\":
+                return _context.stop();
+            }
+          }
+        }, bar, this);
+      }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should not detect generator obj prop function 1`] = `
+"\\"use strict\\";
+
+var _regenerator = require(\\"babel-runtime/regenerator\\");
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = function () {
+  var foo = {
+    bar: _regenerator2.default.mark(function bar() {
+      return _regenerator2.default.wrap(function bar$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+            case \\"end\\":
+              return _context.stop();
+          }
+        }
+      }, bar, this);
+    })
+  };
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should not detect generator obj prop function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2015/2016/2017 -> babel) should not detect generator obj prop function 3`] = `
+"function bar() {
+      return _regenerator2.default.wrap(function bar$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+            case \\"end\\":
+              return _context.stop();
+          }
+        }
+      }, bar, this);
+    }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async anon function 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = _asyncToGenerator(function* () {});"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async anon function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async anon function 3`] = `"function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async class method 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = function () {
+  class Foo {
+    bar() {
+      return _asyncToGenerator(function* () {})();
+    }
+  }
+  const foo = new Foo();
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async class method 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async class method 3`] = `
+"bar() {
+      return _asyncToGenerator(function* () {})();
+    }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async fat arrow 1`] = `"async () => {}"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async fat arrow 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async fat arrow 3`] = `"function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async obj prop anon function 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = function () {
+  const foo = {
+    bar: (() => {
+      var _ref = _asyncToGenerator(function* () {});
+
+      return function bar() {
+        return _ref.apply(this, arguments);
+      };
+    })()
+  };
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async obj prop anon function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async obj prop anon function 3`] = `
+"function bar() {
+        return _ref.apply(this, arguments);
+      }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async obj prop fat arrow function 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = function () {
+  const foo = {
+    bar: (() => {
+      var _ref = _asyncToGenerator(function* () {});
+
+      return function bar() {
+        return _ref.apply(this, arguments);
+      };
+    })()
+  };
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async obj prop fat arrow function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async obj prop fat arrow function 3`] = `
+"function bar() {
+        return _ref.apply(this, arguments);
+      }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async obj prop function 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = function () {
+  const foo = {
+    bar() {
+      return _asyncToGenerator(function* () {})();
+    }
+  };
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async obj prop function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should detect async obj prop function 3`] = `
+"bar() {
+      return _asyncToGenerator(function* () {})();
+    }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should not detect generator anon function 1`] = `
+"\\"use strict\\";
+
+module.exports = function* () {};"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should not detect generator anon function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should not detect generator anon function 3`] = `"function* () {}"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should not detect generator class method 1`] = `
+"\\"use strict\\";
+
+module.exports = function () {
+  class Foo {
+    *bar() {}
+  }
+  const foo = new Foo();
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should not detect generator class method 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should not detect generator class method 3`] = `"*bar() {}"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should not detect generator obj prop function 1`] = `
+"\\"use strict\\";
+
+module.exports = function () {
+  const foo = {
+    *bar() {}
+  };
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should not detect generator obj prop function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2016/2017 -> babel) should not detect generator obj prop function 3`] = `"*bar() {}"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async anon function 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = _asyncToGenerator(function* () {});"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async anon function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async anon function 3`] = `"function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async class method 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = function () {
+  class Foo {
+    bar() {
+      return _asyncToGenerator(function* () {})();
+    }
+  }
+  const foo = new Foo();
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async class method 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async class method 3`] = `
+"bar() {
+      return _asyncToGenerator(function* () {})();
+    }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async fat arrow 1`] = `"async () => {}"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async fat arrow 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async fat arrow 3`] = `"function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async obj prop anon function 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = function () {
+  const foo = {
+    bar: (() => {
+      var _ref = _asyncToGenerator(function* () {});
+
+      return function bar() {
+        return _ref.apply(this, arguments);
+      };
+    })()
+  };
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async obj prop anon function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async obj prop anon function 3`] = `
+"function bar() {
+        return _ref.apply(this, arguments);
+      }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async obj prop fat arrow function 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = function () {
+  const foo = {
+    bar: (() => {
+      var _ref = _asyncToGenerator(function* () {});
+
+      return function bar() {
+        return _ref.apply(this, arguments);
+      };
+    })()
+  };
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async obj prop fat arrow function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async obj prop fat arrow function 3`] = `
+"function bar() {
+        return _ref.apply(this, arguments);
+      }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async obj prop function 1`] = `
+"\\"use strict\\";
+
+var _promise = require(\\"babel-runtime/core-js/promise\\");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new _promise2.default(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return _promise2.default.resolve(value).then(function (value) { step(\\"next\\", value); }, function (err) { step(\\"throw\\", err); }); } } return step(\\"next\\"); }); }; }
+
+module.exports = function () {
+  const foo = {
+    bar() {
+      return _asyncToGenerator(function* () {})();
+    }
+  };
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async obj prop function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should detect async obj prop function 3`] = `
+"bar() {
+      return _asyncToGenerator(function* () {})();
+    }"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should not detect generator anon function 1`] = `
+"\\"use strict\\";
+
+module.exports = function* () {};"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should not detect generator anon function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should not detect generator anon function 3`] = `"function* () {}"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should not detect generator class method 1`] = `
+"\\"use strict\\";
+
+module.exports = function () {
+  class Foo {
+    *bar() {}
+  }
+  const foo = new Foo();
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should not detect generator class method 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should not detect generator class method 3`] = `"*bar() {}"`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should not detect generator obj prop function 1`] = `
+"\\"use strict\\";
+
+module.exports = function () {
+  const foo = {
+    *bar() {}
+  };
+  return foo.bar;
+}();"
+`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should not detect generator obj prop function 2`] = `[Function]`;
+
+exports[`isAsyncFunc in ES5 runtime, from eval(es2017 -> babel) should not detect generator obj prop function 3`] = `"*bar() {}"`;
+
+exports[`isAsyncFunc in ES2017 runtime should detect async anon function 1`] = `"async function () {}"`;
+
+exports[`isAsyncFunc in ES2017 runtime should detect async class method 1`] = `"async bar() {}"`;
+
+exports[`isAsyncFunc in ES2017 runtime should detect async fat arrow 1`] = `"async () => {}"`;
+
+exports[`isAsyncFunc in ES2017 runtime should detect async obj prop anon function 1`] = `"async function () {}"`;
+
+exports[`isAsyncFunc in ES2017 runtime should detect async obj prop fat arrow function 1`] = `"async () => {}"`;
+
+exports[`isAsyncFunc in ES2017 runtime should detect async obj prop function 1`] = `"async bar() {}"`;
+
+exports[`isAsyncFunc in ES2017 runtime should not detect generator anon function 1`] = `"function* () {}"`;
+
+exports[`isAsyncFunc in ES2017 runtime should not detect generator class method 1`] = `"*bar() {}"`;
+
+exports[`isAsyncFunc in ES2017 runtime should not detect generator obj prop anon function 1`] = `"function* () {}"`;
+
+exports[`isAsyncFunc in ES2017 runtime should not detect generator obj prop function 1`] = `"*bar() {}"`;
