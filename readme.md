@@ -1,5 +1,9 @@
 # is-async-func
 
+[![size](https://img.shields.io/badge/size-282%20B-grey.svg)]()
+[![dependencies](https://img.shields.io/badge/dependencies-0-grey.svg)]()
+[![Travis](https://img.shields.io/travis/loklaan/is-async-func.svg)]()
+
 Check if a value is an async function, from ES2017 specification
 
 Supports runtime implementations, as well as babel transpiled code.
@@ -47,7 +51,7 @@ npm install is-async-func
 For runtimes that support async/await, yes!
 
 For transpiled async/await, probably! :grimacing:  
-The transpilation tests cover many different combinations of async declarations and babel transform presets, but the transpiled detection generally takes a hacky approach. Propbably definitely don't use this in hot code.
+The transpilation tests cover many different combinations of async declarations and babel transform presets, but the transpiled detection generally takes a hacky approach. Probably-definitely don't use this in hot code.
 
 ## License
 

@@ -7,9 +7,8 @@
     "index.js"
   ],
   "scripts": {
-    "test": "jest --watchAll",
-    "test:once": "jest",
-    "test:coverage": "jest --coverage"
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "dependencies": {},
   "devDependencies": {
@@ -24,5 +23,9 @@
   },
   "author": "Lochlan Bunn <bunn@lochlan.io>",
   "license": "MIT",
-  "repository": "https://github.com/loklaan/is-async-func"
+  "repository": "https://github.com/loklaan/is-async-func",
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  }
 }
