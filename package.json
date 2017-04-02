@@ -1,6 +1,6 @@
 {
   "name": "is-async-func",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Check if a value is an async function, from ES2017 specification. Supports babel.",
   "main": "index.js",
   "files": [
