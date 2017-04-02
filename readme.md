@@ -1,9 +1,9 @@
 # is-async-func
 
-[![size](https://img.shields.io/badge/size-282%20B-grey.svg)]()
-[![dependencies](https://img.shields.io/badge/dependencies-0-grey.svg)]()
-[![Travis](https://img.shields.io/travis/loklaan/is-async-func.svg)]()
-[![Codecov](https://img.shields.io/codecov/c/github/loklaan/is-async-func.svg)]()
+![size](https://img.shields.io/badge/size-282%20B-grey.svg)
+![dependencies](https://img.shields.io/badge/dependencies-0-grey.svg)
+[![Travis](https://img.shields.io/travis/loklaan/is-async-func.svg)](https://travis-ci.org/loklaan/is-async-func)
+[![Codecov](https://img.shields.io/codecov/c/github/loklaan/is-async-func.svg)](https://codecov.io/gh/loklaan/is-async-func)
 
 Check if a value is an async function, from ES2017 specification
 
