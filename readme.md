@@ -1,5 +1,7 @@
 # is-async-func
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/loklaan/is-async-func.svg)](https://greenkeeper.io/)
+
 ![size](https://img.shields.io/badge/size-282%20B-grey.svg)
 ![dependencies](https://img.shields.io/badge/dependencies-0-grey.svg)
 [![NPM](https://img.shields.io/npm/v/is-async-func.svg)](https://npmjs.com/package/is-async-func)
